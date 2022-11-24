@@ -1,0 +1,93 @@
+# Stock Market Game
+# Welcome Greeting
+print("Welcome to the Stock Market Game!")
+
+# Ask the user if they would like to play and get their response using input()
+play = input("Would you like to play? ")
+
+# If the user says no, quit the game!
+if play.lower != "yes":
+    quit()
+    
+# Print "Okay, Let the game begin :)"
+print("Okay! Let the game begin :)")
+
+# Keep track of the score and use score += 1 to count each correct answer 
+score = 0 
+
+# Ask the user some questions and create an if statement for correct/incorrect answers
+answer_1 = input("What are two ways through which a company can raise capital? ")
+if answer_1.lower() == "equity and debt":
+    print("CORRECT!")
+    score += 1
+else: 
+    print("INCORRECT :(")
+    
+answer_2 = input("How many companies are in the S&P 500? ")
+if answer_2.lower() == "500":
+    print("CORRECT!")
+    score += 1
+else: 
+    print("INCORRECT :(")
+    
+answer_3 = input("What is the correct ticker for Apple Inc? ")
+if answer_3.lower() == "aapl":
+    print("CORRECT!")
+    score += 1
+else: 
+    print("INCORRECT :(")
+    
+answer_4 = input("What is the formula for the accounting equation? ")
+if answer_4.lower() == "assets = liabilities + owner's equity":
+    print("CORRECT!")
+    score += 1
+else: 
+    print("INCORRECT :(")
+    
+answer_5 = input("The bottom-line of the income statement shows what metric? ")
+if answer_5.lower() == "net income":
+    print("CORRECT!")
+    score += 1
+else: 
+    print("INCORRECT :(")
+    
+answer_6 = input("Out of the SPX, DOW, and NASDAQ -- which index is tech heavy? ")
+if answer_6.lower() == "nasdaq":
+    print("CORRECT!")
+    score += 1
+else: 
+    print("INCORRECT :(")
+    
+answer_7 = input("How many quarters are in a calendar year? Spell your answer out. ")
+if answer_7.lower() == "four":
+    print("CORRECT!")
+    score += 1
+else: 
+    print("INCORRECT :(")
+    
+answer_8 = input("What does the acronym SEC stand for in the stock market? ")
+if answer_8.lower() == "securities and exchange commission":
+    print("CORRECT!")
+    score += 1
+else: 
+    print("INCORRECT :(")
+    
+answer_9 = input("What is the name of the first cryptocurrency that was ever created? ")
+if answer_9.lower() == "bitcoin":
+    print("CORRECT!")
+    score += 1
+else: 
+    print("INCORRECT :(")
+    
+answer_10 = input("The BETA of a company measures what? ")
+if answer_10.lower() == "volatility":
+    print("CORRECT!")
+    score += 1
+else: 
+    print("INCORRECT :(")
+    
+# Show the user how many questions they got correct 
+print("You got " + str(score) + " questions out of 10 correct!")
+
+# Show the user's score in pecentage terms 
+print("You scored " + str((score / 10) * 100) + "%.")
